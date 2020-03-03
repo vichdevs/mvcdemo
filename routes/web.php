@@ -11,16 +11,12 @@
 |
 */
 
-//app()->bind('game', function(){
-//    return 'Football';
-//});
-
-//dd(app());
-
-
 Route::get('/', function () {
     return view('welcome');
 });
 
+// triangle route
 Route::get('/triangle/{a}/{b}/{c}', 'TriangleCntrl@index');
+
+// circle route
 Route::get('/circle/{a}', 'CircleCntrl@index');
